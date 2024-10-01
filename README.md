@@ -15,4 +15,4 @@ L'objectif de cet exercice est de respecter le **principe de substitution de Lis
 
     -   **CurrentAccount** (Compte courant) : Les clients peuvent déposer et retirer de l'argent librement.
     -   **SavingsAccount** (Compte d'épargne) : Les clients peuvent déposer de l'argent, mais pas en retirer.
-3.  **Problème à éviter** : Le principe de substitution de Liskov (LSP) stipule que les sous-classes doivent pouvoir être utilisées de manière interchangeable avec la classe de base sans provoquer d'erreurs ou de comportements imprévu
+3.  **Problème à éviter** : Le principe de substitution de Liskov (LSP) stipule que les sous-classes doivent pouvoir être utilisées de manière interchangeable avec la classe de base sans provoquer d'erreurs ou de comportements imprévu. Pour ce faire, vous devrez donc contrevenir à la structure de l'héritage pour que SavingsAccount ne puisse jamais exécuter une méthode qui ne lui est pas accessible.
